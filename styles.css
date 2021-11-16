@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+* {box-sizing: border-box;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.mainboard {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border: 2px solid rgb(156, 156, 156);
+    top: 45%;
+    left: 10%;
+    border-radius: 4px;
+    background: rgb(243, 243, 243);
+    z-index: 0;
+}
+
+.leftswitch {
+    width: 8px;
+    height: 12px;
+    border: 1.5px solid rgb(156, 156, 156);
+    top: 47.3%;
+    position: absolute;
+    left: 11.15%;
+    border-radius: 2px;
+}
+
+.rightswitch {
+    width: 8px;
+    height: 12px;
+    border: 1.5px solid rgb(156, 156, 156);
+    top: 47.3%;
+    position: absolute;
+    left: 11.6%;
+    border-radius: 2px;
+}
+
+.leftscrew {
+
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: grey;
+    top: 47.7%;
+    left: 10.55%;
+
+}
+
+.rightscrew {
+
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: grey;
+    top: 47.7%;
+    left: 12.4%;
+
+}
+
+.top {
+    width: 60px;
+    height: 10px;
+    transform: skew(40deg);
+    border: 2px solid rgb(156, 156, 156);
+    top: 44.2%;
+    left: 9.81%;
+    position: absolute;
+    background: rgb(218, 218, 218);
+    z-index: 2;
+  }
+
+  .left {
+    width: 60px;
+    height: 10px;
+    transform: rotate(90deg);
+    border: 2px solid rgb(156, 156, 156);
+    top: 46.8%;
+    left: 8.3%;
+    position: absolute;
+    background: rgb(218, 218, 218);
+    z-index: -2;
+    border-right: transparent;
+   
+  }
+
+  .leftbottom {
+      width: 12px;
+      height: 15px;
+      background: rgb(218, 218, 218);
+      transform: rotate(45deg);
+      top: 49.30%;
+      position: absolute;
+      left: 9.80%;
+      z-index: -1;
+      border-bottom: 2px solid rgb(156, 156, 156)
+  }
+
+  .wrapper {
+      height: 100vh;
+      width: 100%;
+      
+}
+
+.leftwire {
+    width: 5px;
+    height: 300px;
+    position: absolute;
+    background: grey;
+    top: 14.2%;
+    left: 11.3%;
+    border-radius: 40px 0 0 0;
+}
+
+.topwire {
+    height: 5px;
+    width: 1350px;
+    position: absolute;
+    background: grey;
+    top: 14.15%;
+    left: 11.3%;
+    border-radius: 40px 40px 0 0;
+}
+
+.rightwire {
+    width: 5px;
+    height: 50px;
+    position: absolute;
+    background: grey;
+    top: 14.2%;
+    left: 81.35%;
+    border-radius: 0 40px 0 0;
+}
+
+.lightshadeborder {
+    
+    border-bottom: 102px solid #421429;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 144px;
+    position: absolute;
+    top: 18.8%;
+    left: 77.6%;
+    z-index: 0;
+    
+  }
+
+.lightshade {
+    
+        border-bottom: 100px solid #7e2e52;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        height: 0;
+        width: 140px;
+        position: absolute;
+        top: 19%;
+        left: 77.7%;
+        z-index: 3;
+        
+      }
+
+
+      
+    
+
+    .lightshade3d {
+        width: 144px;
+        height: 25px;
+        background: #be608a;
+        border-radius: 50%;
+        position: absolute;
+        top: 27.8%;
+        left: 77.6%;
+        border: 2px solid #421429;
+        z-index: 3;
+        
+    }
+
+    .bulb {
+        width: 9px;
+        height: 12px;
+        background: rgb(255, 255, 0);
+        border-radius: 0 0 6px 6px;
+        position: absolute;
+        top: 28.02%;
+        left: 81.1%;
+        z-index: 3;
+        box-shadow: 0 85px 150px 65px yellow;
+        border: 2px solid rgba(255, 230, 0, 0.942);
+    }
+
+    .light1 {
+      color: rgba(255, 255, 0, 0.06);
+      font-size: 450px;
+      position: absolute;
+      top: 120px;
+      left: 200px;
+      transform: rotate(25deg);
+      
+    }
+
+    .light2 {
+      color: rgba(255, 255, 0, 0.06);
+      font-size: 450px;
+      position: absolute;
+      top: 250px;
+      left: 500px;
+      transform: rotate(-65deg);
+
+    }
+
+    .light3 {
+      color: rgba(255, 255, 0, 0.06);
+      font-size: 700px;
+      position: absolute;
+      top: 80px;
+      left: 920px;
+      transform: rotate(50deg);
+      
+      
+    }
+
+   
